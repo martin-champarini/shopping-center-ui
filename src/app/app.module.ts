@@ -1,3 +1,4 @@
+import { LoginRoutingModule } from './modules/login/login-routing.module';
 import { PageNotFoundComponent } from './modules/page-not-found/component/page-not-found.component';
 import { HomeComponent } from './modules/home/component/home.component';
 import { NgModule } from '@angular/core';
@@ -13,13 +14,13 @@ import { LoginComponent } from './modules/login/components/login.component';
     PageNotFoundComponent,
     HomeComponent
   ],
-  imports: [   
+  imports: [
     BrowserModule,
-    AppRoutingModule    
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  
+export class AppModule {
+
 }
