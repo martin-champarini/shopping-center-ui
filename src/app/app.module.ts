@@ -1,14 +1,17 @@
-import { LoginModule } from './modules/login/login.module';
-import { BrowserModule } from '@angular/platform-browser';
+import { PageNotFoundComponent } from './modules/page-not-found/component/page-not-found.component';
+import { HomeComponent } from './modules/home/component/home.component';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/components/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [   
     BrowserModule,
