@@ -1,3 +1,4 @@
+import { UserComponent } from './modules/user/components/user.component';
 import { LoginRoutingModule } from './modules/login/login-routing.module';
 import { PageNotFoundComponent } from './modules/page-not-found/component/page-not-found.component';
 import { HomeComponent } from './modules/home/component/home.component';
@@ -12,7 +13,8 @@ import { LoginComponent } from './modules/login/components/login.component';
     AppComponent,
     LoginComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
