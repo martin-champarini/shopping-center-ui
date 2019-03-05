@@ -42,6 +42,6 @@ export class UserService {
 
    /** Log a UserService message with the MessageService which we need to create before */
    private log(message: string) {
-     alert('' + message);
+     alert('ERROR MESSAGE: ' + message);
   }
 }
