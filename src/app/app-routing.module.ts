@@ -15,8 +15,8 @@ const routes: Routes = [/* Need declare the routes in order, the latest is the e
 @NgModule({
     imports: [
       RouterModule.forRoot(/* Eager resolution, need add some lazy children */
-          routes,
-          { enableTracing: true } // <-- debugging purposes only
+          routes
+          //{ enableTracing: true } // <-- debugging purposes only
       )
     ],
     exports: [
