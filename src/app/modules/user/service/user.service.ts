@@ -20,7 +20,7 @@ export class UserService {
 
   addUser(user: User): Observable<User> {
     /* alert('' + "localhost:8080/createUser"); */
-    return  this.http.post<User>('http://localhost:8080/createUser', {'username': user.username, 'password': user.password}, httpOptions)      
+    return  this.http.post<User>('http://localhost:8080/createUser', user, httpOptions)      
       .pipe(
         catchError(this.handleError('addUser', user))
       );

@@ -16,17 +16,9 @@ const httpOptions = {
 export class UserComponent implements OnInit {
 
   users: User[];
-
   
-  //TODO move to the service this implementation it's working fine
-  constructor(private userService: UserService, private http: HttpClient) { 
-    this.http.post('http://localhost:8080/createUser', {'username': 'user', 'password': '1234'}, httpOptions)
-    .subscribe(data => {
-      console.log('' + data);
-      
-    });
-  }
-
+  constructor(private userService: UserService) {}
+  
   ngOnInit() {
 
   }
